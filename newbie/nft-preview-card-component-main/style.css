@@ -1,0 +1,132 @@
+:root {
+	--important-text-color: hsl(183, 73%, 60%);
+	--normal-text-color: hsl(0, 0%, 80%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	height: 90vh;
+	background-color: #15273f;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.nft-card {
+	width: 20vw;
+	min-width: 250px;
+	max-width: 400px;
+	margin: 20px;
+	background-color: hsl(214, 52%, 23%);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.nft-img__wrapper {
+	display: grid;
+}
+
+.nft-card__img,
+.nft-img__view {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.nft-card__img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.nft-img__view {
+	opacity: 0;
+}
+
+.nft-img__view:hover {
+	opacity: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(79, 220, 227, 0.45);
+	border-radius: 10px;
+}
+
+.nft-card__title a:hover {
+	color: var(--important-text-color);
+}
+
+.nft-card__description {
+	color: hsl(0, 0%, 80%);
+}
+
+.nft-card__details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nft-card__price {
+	color: var(--important-text-color);
+	display: flex;
+	font-weight: 500;
+	align-items: center;
+	gap: 5px;
+}
+
+.nft-card__time {
+	color: hsl(0, 0%, 80%);
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.hr {
+	border-bottom: 0.1px solid hsl(0, 0%, 80%);
+	margin: 8px 0;
+}
+
+.nft-card__author {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.nft-card__avatar {
+	width: 2rem;
+	height: 2rem;
+	border: solid white 1px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.nft-card__author a {
+	text-decoration: none;
+	color: white;
+}
+
+.nft-card__author a:hover {
+	color: var(--important-text-color);
+}
+
+.nft-card__author p {
+	color: var(--normal-text-color);
+}
+
+.attribution {
+	font-size: 12px;
+	color: var(--normal-text-color);
+}
+
+.attribution a {
+	color: hsl(0, 80%, 60%);
+}
